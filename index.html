@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Snag: a fast download manager that lives in your browser</title>
+    <meta
+      name="description"
+      content="Snag adds a Download button to videos, downloads whole playlists and seasons, and takes over big downloads from your browser. Free and open source, for Windows, macOS and Linux."
+    />
+    <meta name="theme-color" content="#121418" />
+    <meta property="og:title" content="Snag" />
+    <meta property="og:description" content="A fast download manager that lives in your browser." />
+    <meta property="og:image" content="https://snagdl.com/img/app.webp" />
+    <meta property="og:url" content="https://snagdl.com/" />
+    <link rel="icon" href="/img/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/img/icon.png" />
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/download.js" defer></script>
+  </head>
+  <body>
+    <header class="top">
+      <a class="brand" href="/"><img src="/img/icon.svg" alt="" width="28" height="28" />Snag</a>
+      <nav>
+        <a href="#features">Features</a>
+        <a href="#download">Download</a>
+        <a href="https://github.com/Roham1299/snag">GitHub</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1>A fast download manager that lives in your browser.</h1>
+        <p class="lead">
+          Hover over a video and a Download button appears on it. Pick a quality and Snag saves it,
+          properly named, at full speed. Whole playlists and seasons too, and every big download
+          from your browser.
+        </p>
+        <div class="cta">
+          <a class="button primary" id="get" href="#download">Download Snag</a>
+          <a class="button" href="https://github.com/Roham1299/snag">View the source</a>
+        </div>
+        <p class="small" id="get-note">Free and open source, for Windows, macOS and Linux.</p>
+        <img
+          class="shot"
+          src="/img/app.webp"
+          width="1280"
+          height="800"
+          alt="Snag's window: downloads with their progress, queues, subscriptions and categories"
+        />
+      </section>
+
+      <section id="features" class="features">
+        <article>
+          <h2>A button on every video</h2>
+          <p>
+            Every quality from 4K down, audio only, subtitles, and clips cut to the exact frame.
+            Works on about 1,800 video sites and on any page that plays a video file or stream.
+          </p>
+        </article>
+        <article>
+          <h2>Full speed, and it resumes</h2>
+          <p>
+            Several connections per file, re-split as parts finish. Pause and resume any time,
+            even after a restart or a dropped connection.
+          </p>
+        </article>
+        <article>
+          <h2>Your browser's downloads, handed over</h2>
+          <p>
+            Archives, programs, videos and documents go to Snag automatically. If Snag can't take
+            one, the browser gets it back.
+          </p>
+        </article>
+        <article>
+          <h2>Many links at once</h2>
+          <p>
+            Right-click a page to grab its links, or paste a list. Snag sorts them, finds their real
+            names and sizes, and downloads the ones you tick.
+          </p>
+        </article>
+        <article>
+          <h2>Subscriptions</h2>
+          <p>
+            Follow a channel, a playlist or a podcast. Snag checks for new ones every few hours and
+            downloads them the way you chose.
+          </p>
+        </article>
+        <article>
+          <h2>Checksums</h2>
+          <p>
+            When the page or the server says what a file's checksum should be, Snag offers to check
+            it, and to download it again if it doesn't match.
+          </p>
+        </article>
+      </section>
+
+      <section class="split">
+        <div>
+          <h2>Playlists and seasons, in one go</h2>
+          <p>
+            Open a playlist, a channel, an album or a season, tick what you want, and choose the
+            quality, the folder and how files are named. Episodes are saved as
+            <code>Show S01E03 - Title</code>, in their own queue.
+          </p>
+        </div>
+        <img
+          src="/img/playlist.webp"
+          width="980"
+          height="1000"
+          loading="lazy"
+          alt="The Download playlist window: episodes ticked, quality, folder and file names"
+        />
+      </section>
+
+      <section class="split reverse">
+        <div>
+          <h2>Send links from your phone</h2>
+          <p>
+            Scan a QR code once, and your phone can send links to Snag and follow your downloads
+            over your home network. No app to install, no account.
+          </p>
+        </div>
+        <img
+          class="phone"
+          src="/img/phone.webp"
+          width="390"
+          height="844"
+          loading="lazy"
+          alt="Snag's phone page: a box to paste a link, and the downloads with their progress"
+        />
+      </section>
+
+      <section class="private">
+        <h2>Private by design</h2>
+        <p>
+          Snag runs entirely on your computer, and the extension talks only to the Snag app on the
+          same machine. Once a day the app reads a small signed file from this website to learn of
+          new releases. It sends nothing about you or your downloads.
+        </p>
+      </section>
+
+      <section id="download" class="download">
+        <h2>Download</h2>
+        <p class="small" id="version">The latest release, from GitHub.</p>
+        <div class="platforms">
+          <div class="platform">
+            <h3>Windows</h3>
+            <p>Windows 10 and 11, 64-bit. No administrator needed.</p>
+            <a class="button primary" data-asset="windows" href="https://github.com/Roham1299/snag/releases/latest">Installer (.exe)</a>
+          </div>
+          <div class="platform">
+            <h3>macOS</h3>
+            <p>Apple silicon and Intel.</p>
+            <a class="button primary" data-asset="macos" href="https://github.com/Roham1299/snag/releases/latest">Disk image (.dmg)</a>
+          </div>
+          <div class="platform">
+            <h3>Linux</h3>
+            <p>64-bit. FFmpeg comes from your system.</p>
+            <a class="button primary" data-asset="deb" href="https://github.com/Roham1299/snag/releases/latest">Debian, Ubuntu (.deb)</a>
+            <div class="more">
+              <a data-asset="rpm" href="https://github.com/Roham1299/snag/releases/latest">Fedora (.rpm)</a>
+              <a data-asset="arch" href="https://github.com/Roham1299/snag/releases/latest">Arch (.pkg.tar.zst)</a>
+            </div>
+          </div>
+        </div>
+        <p class="small">
+          Start Snag once and it walks you through adding its extension to Chrome, Edge, Brave,
+          Vivaldi, Opera or Firefox. The Windows and macOS builds aren't code-signed yet, so
+          SmartScreen or Gatekeeper asks before the first start.
+          <a id="sums" href="https://github.com/Roham1299/snag/releases/latest">Checksums</a>
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        Snag is free software under the
+        <a href="https://github.com/Roham1299/snag/blob/main/LICENSE">GPL-3.0</a>. Videos protected
+        with DRM can't be downloaded.
+      </p>
+      <p>
+        Snag uses <a href="https://github.com/yt-dlp/yt-dlp">yt-dlp</a> and, on Windows, an LGPL
+        build of FFmpeg from
+        <a href="https://github.com/BtbN/FFmpeg-Builds">BtbN's FFmpeg-Builds</a>, whose source is
+        there.
+      </p>
+    </footer>
+  </body>
+</html>
