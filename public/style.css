@@ -217,16 +217,6 @@ p {
   border-radius: 14px;
 }
 
-.split.reverse > div {
-  order: 2;
-}
-
-.split .phone {
-  justify-self: center;
-  width: 300px;
-  border-radius: 28px;
-}
-
 .private {
   max-width: 760px;
   margin: 0 auto;
@@ -304,9 +294,5 @@ footer p {
   .split {
     grid-template-columns: 1fr;
     gap: 24px;
-  }
-
-  .split.reverse > div {
-    order: 0;
   }
 }
