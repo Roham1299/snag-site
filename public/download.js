@@ -9,6 +9,7 @@ const ASSETS = {
   rpm: /\.rpm$/,
   arch: /\.pkg\.tar\.zst$/,
   sums: /^SHA256SUMS$/,
+  firefox: /^snag-firefox-[\d.]+\.xpi$/, // signed; the unsigned one says so in its name
 };
 
 const LABELS = { windows: "for Windows", macos: "for macOS", deb: "for Linux" };
@@ -33,6 +34,7 @@ async function main() {
     if (urls[link.dataset.asset]) link.href = urls[link.dataset.asset];
   }
   if (urls.sums) document.getElementById("sums").href = urls.sums;
+  if (urls.firefox) document.getElementById("firefox").hidden = false;
   document.getElementById("version").textContent = `Snag ${release.tag_name.replace(/^v/, "")}`;
 
   const system = systemOf(navigator.userAgent);

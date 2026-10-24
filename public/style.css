@@ -266,6 +266,19 @@ p {
   font-size: 15px;
 }
 
+.download .firefox {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.download .firefox[hidden] {
+  display: none;
+}
+
 .download > .small {
   max-width: 720px;
   margin: 0 auto;
