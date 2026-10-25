@@ -23,6 +23,11 @@ function systemOf(ua) {
 
 async function main() {
   const res = await fetch(`https://api.github.com/repos/${REPO}/releases/latest`);
+  if (res.status === 404) {
+    document.getElementById("version").textContent = "The next release is on its way.";
+    document.getElementById("get-note").textContent = "The next release is on its way.";
+    return;
+  }
   if (!res.ok) return;
   const release = await res.json();
   const urls = {};
@@ -43,7 +48,7 @@ async function main() {
     get.href = urls[system];
     get.textContent = `Download ${LABELS[system]}`;
     document.getElementById("get-note").textContent =
-      `Snag ${release.tag_name.replace(/^v/, "")}, free and open source. Other systems below.`;
+      `Snag ${release.tag_name.replace(/^v/, "")}, free to use. Other systems below.`;
   }
 }
 
