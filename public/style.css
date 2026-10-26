@@ -1,15 +1,16 @@
 :root {
-  --background: #121418;
-  --surface: #1b1e24;
-  --raised: #20242b;
-  --raised-hover: #2a2f37;
-  --border: #2a2e36;
-  --text: #e8eaed;
-  --text-dim: #a3a9b1;
-  --text-faint: #6f7680;
-  --accent: #5b9bff;
-  --accent-strong: #2563eb;
-  --accent-hover: #3473f0;
+  /* The app's colours (snag's frontend/src/lib/styles/tokens.css). */
+  --background: #0e0f11;
+  --surface: #16181b;
+  --raised: #1c1f23;
+  --raised-hover: #24272c;
+  --border: #24272c;
+  --text: #eceef1;
+  --text-dim: #a0a6ae;
+  --text-faint: #686e77;
+  --accent: #ff8a62;
+  --accent-strong: #ec5a2c;
+  --accent-hover: #f66a3c;
   --radius: 10px;
   color-scheme: dark;
 }
