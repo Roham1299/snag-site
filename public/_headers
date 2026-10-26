@@ -5,3 +5,10 @@
 
 /img/*
   Cache-Control: public, max-age=604800
+
+/phone/*
+  Content-Security-Policy: default-src 'self'; connect-src 'self' https://cloud.snagdl.com wss://cloud.snagdl.com; img-src 'self' data:; style-src 'self'; script-src 'self'; worker-src 'self'; manifest-src 'self'; media-src 'self' blob:; base-uri 'none'; form-action 'self'; frame-ancestors 'none'
+  Cache-Control: no-cache
+
+/phone/assets/*
+  Cache-Control: public, max-age=31536000, immutable
