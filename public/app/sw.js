@@ -1,4 +1,4 @@
-// Snag's phone page, in the background: shows notifications, and serves a watched download to
+// Snag's web app, in the background: shows notifications, and serves a watched download to
 // the video element as ranges fetched from the page (lib/remote/watch.ts).
 const CHUNK = 2 * 1024 * 1024;
 
@@ -16,8 +16,8 @@ self.addEventListener("push", (e) => {
     self.registration.showNotification(note.title, {
       body: note.body,
       tag: note.tag,
-      icon: "/phone/icon-192.png",
-      badge: "/phone/icon-192.png",
+      icon: "/app/icon-192.png",
+      badge: "/app/icon-192.png",
     }),
   );
 });
@@ -26,15 +26,15 @@ self.addEventListener("notificationclick", (e) => {
   e.notification.close();
   e.waitUntil(
     self.clients.matchAll({ type: "window", includeUncontrolled: true }).then((list) => {
-      const open = list.find((c) => c.url.includes("/phone/"));
-      return open ? open.focus() : self.clients.openWindow("/phone/");
+      const open = list.find((c) => c.url.includes("/app/"));
+      return open ? open.focus() : self.clients.openWindow("/app/");
     }),
   );
 });
 
 self.addEventListener("fetch", (e) => {
   const url = new URL(e.request.url);
-  const match = /^\/phone\/stream\/([A-Za-z0-9_-]+)$/.exec(url.pathname);
+  const match = /^\/app\/stream\/([A-Za-z0-9_-]+)$/.exec(url.pathname);
   if (!match) return;
   e.respondWith(stream(e, match[1]));
 });
