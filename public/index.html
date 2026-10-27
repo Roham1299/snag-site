@@ -6,7 +6,7 @@
     <title>Snag: a fast download manager that lives in your browser</title>
     <meta
       name="description"
-      content="Snag adds a Download button to videos, downloads whole playlists and seasons, and takes over big downloads from your browser. Free, with its source public, for Windows, macOS and Linux."
+      content="Snag adds a Download button to videos, downloads whole playlists and seasons, and takes over big downloads from your browser. Free to use, for Windows, macOS and Linux."
     />
     <meta name="theme-color" content="#121418" />
     <meta property="og:title" content="Snag" />
@@ -24,7 +24,6 @@
       <nav>
         <a href="#features">Features</a>
         <a href="#download">Download</a>
-        <a href="https://github.com/Roham1299/snag">GitHub</a>
       </nav>
     </header>
 
@@ -38,9 +37,9 @@
         </p>
         <div class="cta">
           <a class="button primary" id="get" href="#download">Download Snag</a>
-          <a class="button" href="https://github.com/Roham1299/snag">View the source</a>
+          <a class="button" href="#features">See what it does</a>
         </div>
-        <p class="small" id="get-note">Free, with its source public, for Windows, macOS and Linux.</p>
+        <p class="small" id="get-note">Free to use, for Windows, macOS and Linux.</p>
         <img
           class="shot"
           src="/img/app.webp"
@@ -125,25 +124,25 @@
 
       <section id="download" class="download">
         <h2>Download</h2>
-        <p class="small" id="version">The latest release, from GitHub.</p>
+        <p class="small" id="version">The latest release.</p>
         <div class="platforms">
           <div class="platform">
             <h3>Windows</h3>
             <p>Windows 10 and 11, 64-bit. No administrator needed.</p>
-            <a class="button primary" data-asset="windows" href="https://github.com/Roham1299/snag/releases/latest">Installer (.exe)</a>
+            <a class="button primary" data-asset="windows" href="/download/windows">Installer (.exe)</a>
           </div>
           <div class="platform">
             <h3>macOS</h3>
             <p>Apple silicon and Intel.</p>
-            <a class="button primary" data-asset="macos" href="https://github.com/Roham1299/snag/releases/latest">Disk image (.dmg)</a>
+            <a class="button primary" data-asset="macos" href="/download/macos">Disk image (.dmg)</a>
           </div>
           <div class="platform">
             <h3>Linux</h3>
             <p>64-bit. FFmpeg comes from your system.</p>
-            <a class="button primary" data-asset="deb" href="https://github.com/Roham1299/snag/releases/latest">Debian, Ubuntu (.deb)</a>
+            <a class="button primary" data-asset="deb" href="/download/deb">Debian, Ubuntu (.deb)</a>
             <div class="more">
-              <a data-asset="rpm" href="https://github.com/Roham1299/snag/releases/latest">Fedora (.rpm)</a>
-              <a data-asset="arch" href="https://github.com/Roham1299/snag/releases/latest">Arch (.pkg.tar.zst)</a>
+              <a data-asset="rpm" href="/download/rpm">Fedora (.rpm)</a>
+              <a data-asset="arch" href="/download/arch">Arch (.pkg.tar.zst)</a>
             </div>
           </div>
         </div>
@@ -155,22 +154,22 @@
           Start Snag once and it walks you through adding its extension to Chrome, Edge, Brave,
           Vivaldi, Opera or Firefox. The Windows and macOS builds aren't code-signed yet, so
           SmartScreen or Gatekeeper asks before the first start.
-          <a id="sums" href="https://github.com/Roham1299/snag/releases/latest">Checksums</a>
+          <a id="sums" href="/download/sums">Checksums</a>
         </p>
       </section>
     </main>
 
     <footer>
       <p>
-        Snag is free to use, with its source under the
-        <a href="https://github.com/Roham1299/snag/blob/main/LICENSE">FSL-1.1-MIT</a>. Videos protected
-        with DRM can't be downloaded.
+        Snag is free to use. Videos protected with DRM can't be downloaded.
       </p>
       <p>
         Snag uses <a href="https://github.com/yt-dlp/yt-dlp">yt-dlp</a> and, on Windows, an LGPL
         build of FFmpeg from
-        <a href="https://github.com/BtbN/FFmpeg-Builds">BtbN's FFmpeg-Builds</a>:
-        <a href="https://github.com/Roham1299/snag/releases/tag/ffmpeg-n9.0.2-35-g9a9b70bb8c">the exact build and its source</a>.
+        <a href="https://github.com/BtbN/FFmpeg-Builds">BtbN's FFmpeg-Builds</a>
+        (autobuild-2026-10-24-13-02, n9.0.2-35, unchanged):
+        <a href="/download/ffmpeg">the exact build</a> and
+        <a href="https://git.ffmpeg.org/gitweb/ffmpeg.git/commit/9a9b70bb8c">its source</a>.
       </p>
     </footer>
   </body>

@@ -1,3 +1,13 @@
 /firefox https://updates.snagdl.com/firefox/snag.xpi 302
 /phone/* /app/:splat 301
 /phone /app/ 301
+
+# The latest release's files, kept in Snag's updates bucket by the Feed workflow.
+/download/windows https://updates.snagdl.com/releases/latest/Snag-windows-amd64-setup.exe 302
+/download/macos https://updates.snagdl.com/releases/latest/Snag-macos.dmg 302
+/download/deb https://updates.snagdl.com/releases/latest/snag_amd64.deb 302
+/download/rpm https://updates.snagdl.com/releases/latest/snag.x86_64.rpm 302
+/download/arch https://updates.snagdl.com/releases/latest/snag-x86_64.pkg.tar.zst 302
+/download/extension https://updates.snagdl.com/releases/latest/snag-extension.zip 302
+/download/sums https://updates.snagdl.com/releases/latest/SHA256SUMS 302
+/download/ffmpeg https://updates.snagdl.com/ffmpeg/ffmpeg-n9.0.2-35-g9a9b70bb8c/ffmpeg-n9.0.2-35-g9a9b70bb8c-win64-lgpl-shared-9.0.zip 302
