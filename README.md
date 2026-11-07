@@ -7,8 +7,10 @@ publish.
 The download buttons find their files in Snag's updates bucket, `updates.snagdl.com/releases/`, where the Feed workflow puts each release (`download.js`, and `_redirects` for the fixed links).
 `public/_headers` sets the security headers Cloudflare sends.
 
-Screenshots come from the app's preview mode (`npm run dev` in Snag's `frontend/`): `app.webp`
-is `/preview.html` at 1280×800, `playlist.webp` the picker cropped from `/preview.html?playlist`.
+Screenshots come from the app's preview mode (`npm run dev` in Snag's `frontend/`), taken at
+twice the size in dark mode with reduced motion (Chrome's `--force-dark-mode`,
+`--force-prefers-reduced-motion` and `--force-device-scale-factor=2`): `app.webp` is
+`/preview.html` at 1280×800, `playlist.webp` the picker cropped from `/preview.html?playlist`.
 
 `public/app/` is the web app, built from Snag's repository (`task site:app` there): signed in to a
 Snag Cloud account, it sends links to the computers on it, through `cloud.snagdl.com`. Rebuild it
