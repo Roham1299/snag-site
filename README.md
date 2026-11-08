@@ -18,3 +18,6 @@ twice the size in dark mode with reduced motion (Chrome's `--force-dark-mode`,
 `public/app/` is the web app, built from Snag's repository (`task site:app` there): signed in to a
 Snag Cloud account, it sends links to the computers on it, through `cloud.snagdl.com`. Rebuild it
 there after changing it; don't edit it here.
+
+`public/license.txt` is a copy of Snag's `LICENSE`, its end user license agreement: copy it again
+when that changes.

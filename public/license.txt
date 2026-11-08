@@ -1,0 +1,103 @@
+Snag End User License Agreement
+
+Copyright 2026 Roham1299. All rights reserved.
+
+Snag is free to download and use. Snag Cloud, which adds features to it, is
+an optional subscription with its own terms.
+
+This agreement is between you and Roham1299 ("we"), who makes Snag. It covers
+the Snag app, its browser extension and their updates (together, "Snag").
+By installing or using Snag, you agree to it. If you don't agree, don't
+install or use Snag.
+
+
+1. Your license
+
+We give you a free, personal, non-exclusive, non-transferable license to
+install and use Snag on devices you own or control, for as long as you follow
+this agreement. Snag is licensed to you, not sold: we keep every right in it
+that this agreement doesn't give you.
+
+
+2. What you may not do
+
+Except as far as the law allows despite this agreement, you may not:
+
+  - sell, rent, lend, sublicense or share Snag, or offer it as a service;
+  - copy or redistribute Snag, other than one backup for yourself (point
+    others to snagdl.com instead);
+  - reverse engineer, decompile, disassemble or modify Snag;
+  - get around anything that keeps Snag Cloud's features to subscribers;
+  - remove or change the notices in Snag; or
+  - use Snag's name or logo, which are ours, for anything of your own.
+
+
+3. What you download
+
+Snag downloads what you ask it to. You are responsible for having the right
+to download and keep it, and for following the terms of the sites you
+download from. Don't use Snag to infringe copyright or any other right, or to
+break the law.
+
+
+4. Snag Cloud
+
+Snag Cloud is an optional paid service. Its subscription, payment and use are
+governed by its own terms, which you agree to when you sign up. When a
+subscription ends, the features it adds stop working; Snag itself stays free.
+
+
+5. Updates
+
+Snag looks for updates and, when one is out, downloads it and offers to
+install it. Updates are covered by this agreement unless they come with
+another.
+
+
+6. Software by others
+
+Snag includes software made by others, under their own licenses, which this
+agreement doesn't change: among them yt-dlp (public domain), FFmpeg in the
+Windows installer (GNU LGPL 2.1), the Geist fonts (SIL Open Font License 1.1),
+and libraries under the MIT, BSD, ISC and Apache licenses. Their licenses and
+notices come with Snag, in THIRD_PARTY_NOTICES and in Snag's About page. Where
+one of those licenses gives you rights this agreement doesn't, such as
+replacing or changing FFmpeg's files, that license applies to that software.
+
+
+7. Privacy
+
+Snag runs on your computer. It sends nothing about you or your downloads to
+us. It asks Snag's website, snagdl.com, every hour whether a new version is
+out, and fetches new versions of yt-dlp, which it downloads videos with.
+Snag Cloud, if you use it, is covered by its own terms.
+
+
+8. No warranty
+
+Snag is provided "as is", without warranty of any kind, express or implied,
+including merchantability, fitness for a particular purpose and
+non-infringement, as far as the law allows.
+
+
+9. Limitation of liability
+
+As far as the law allows, we are not liable for any indirect, incidental,
+special or consequential damages, or for lost data, files, time or profits,
+arising from Snag or this agreement, even if we were told they could happen.
+Nothing in this agreement limits liability that the law doesn't allow us to
+limit.
+
+
+10. Ending this agreement
+
+This license ends by itself if you break this agreement. You can end it at
+any time by uninstalling Snag. When it ends, stop using Snag and delete it.
+Sections 3, 6, 8 and 9 continue to apply.
+
+
+11. Changes and earlier versions
+
+We may change this agreement for later versions of Snag; the agreement that
+comes with your copy of Snag is the one that applies to it. Versions of Snag
+before 0.12.1 came with another license, which still applies to them.
