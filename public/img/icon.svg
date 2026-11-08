@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="-6.62 -6.62 141.24 141.24">
-<!-- Snag's icon: tweezers holding a glowing cube with a download arrow etched into it. Sizes of 32px and under use snag-small.svg. -->
+<!-- Snag's icon: tweezers holding a glowing cube with a download arrow etched into it. Only the files of 32px and under use snag-small.svg. -->
 <defs>
 <linearGradient id="tb" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="128">
 <stop offset="0" stop-color="#3a3a41"/>
