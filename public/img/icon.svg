@@ -1,25 +1,61 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
-  <defs>
-    <linearGradient id="tile" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#ff7a45"/>
-      <stop offset="1" stop-color="#e0324b"/>
-    </linearGradient>
-    <!-- The hook's eye: a hole through the tip of the S. -->
-    <mask id="eye" maskUnits="userSpaceOnUse" x="0" y="0" width="128" height="128">
-      <rect width="128" height="128" fill="#fff"/>
-      <circle cx="84" cy="30" r="4" fill="#000"/>
-    </mask>
-  </defs>
-  <rect x="6" y="6" width="116" height="116" rx="30" fill="url(#tile)"/>
-  <g fill="#fff">
-    <!-- The S, from the eye down to the arrow -->
-    <g mask="url(#eye)">
-      <path d="M84 30C74 18 46 20 46 37C46 52 64 51 64 63V72" fill="none" stroke="#fff" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
-      <circle cx="84" cy="30" r="9"/>
-    </g>
-    <!-- The arrowhead: a sharp tip with a rounded back -->
-    <path d="M64 88L55.82 73.13Q53 68 58 68Q64 65 70 68Q75 68 72.18 73.13Z"/>
-    <!-- The catch -->
-    <path d="M33 76v4a20 20 0 0 0 20 20h22a20 20 0 0 0 20-20v-4" fill="none" stroke="#fff" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
-  </g>
+<!-- Snag's icon for 32px and under: bolder tweezers, a bigger cube, no arrow, and no margin around the tile. -->
+<defs>
+<linearGradient id="tb" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="128">
+<stop offset="0" stop-color="#3a3a41"/>
+<stop offset="1" stop-color="#202024"/>
+</linearGradient>
+<linearGradient id="tr" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="128">
+<stop offset="0" stop-color="#ffffff" stop-opacity="0.22"/>
+<stop offset="1" stop-color="#ffffff" stop-opacity="0.05"/>
+</linearGradient>
+<clipPath id="tc">
+<rect width="128" height="128" rx="28"/>
+</clipPath>
+<radialGradient id="h" gradientUnits="userSpaceOnUse" cx="34.43" cy="93.57" r="55">
+<stop offset="0" stop-color="#ff7a45" stop-opacity="0.42"/>
+<stop offset="0.45" stop-color="#ff7a45" stop-opacity="0.168"/>
+<stop offset="1" stop-color="#ff7a45" stop-opacity="0"/>
+</radialGradient>
+<linearGradient id="bu" gradientUnits="userSpaceOnUse" x1="0" y1="-26.5" x2="0" y2="-1">
+<stop offset="0" stop-color="#dcdce1"/>
+<stop offset="0.55" stop-color="#bebec6"/>
+<stop offset="1" stop-color="#a0a0a9"/>
+</linearGradient>
+<linearGradient id="bl" gradientUnits="userSpaceOnUse" x1="0" y1="26.5" x2="0" y2="1">
+<stop offset="0" stop-color="#ffffff"/>
+<stop offset="0.55" stop-color="#e6e6ea"/>
+<stop offset="1" stop-color="#c6c6cd"/>
+</linearGradient>
+<linearGradient id="cr" gradientUnits="userSpaceOnUse" x1="34.43" y1="72.07" x2="34.43" y2="115.08">
+<stop offset="0" stop-color="#ffb08a"/>
+<stop offset="1" stop-color="#d9501c"/>
+</linearGradient>
+<linearGradient id="ctop" gradientUnits="userSpaceOnUse" x1="33.91" y1="72.07" x2="50.55" y2="98.91">
+<stop offset="0" stop-color="#ffc3a2"/>
+<stop offset="1" stop-color="#ff9c6e"/>
+</linearGradient>
+<linearGradient id="cfront" gradientUnits="userSpaceOnUse" x1="31.21" y1="84.18" x2="34.94" y2="115.08">
+<stop offset="0" stop-color="#ff7a42"/>
+<stop offset="1" stop-color="#ea5a20"/>
+</linearGradient>
+<linearGradient id="cleft" gradientUnits="userSpaceOnUse" x1="33.91" y1="72.07" x2="15.6" y2="100.34">
+<stop offset="0" stop-color="#ffc3a2"/>
+<stop offset="1" stop-color="#ff9c6e"/>
+</linearGradient>
+</defs>
+<rect width="128" height="128" rx="28" fill="url(#tb)"/>
+<rect x=".5" y=".5" width="127" height="127" rx="27.5" fill="none" stroke="url(#tr)"/>
+<g clip-path="url(#tc)">
+<circle cx="34.43" cy="93.57" r="55" fill="url(#h)"/>
+<path d="M15.6 100.34L18.3 88.23L33.91 72.07L53.25 86.8L50.55 98.91L34.94 115.08Z" fill="url(#cr)" stroke="url(#cr)" stroke-width="2" stroke-linejoin="round"/>
+<path d="M33.91 72.07L53.25 86.8L50.55 98.91L31.21 84.18Z" fill="url(#ctop)"/>
+<path d="M15.6 100.34L34.94 115.08L50.55 98.91L31.21 84.18Z" fill="url(#cfront)"/>
+<path d="M18.3 88.23L15.6 100.34L31.21 84.18L33.91 72.07Z" fill="url(#cleft)"/>
+<path d="M31.21 84.18L50.55 98.91M31.21 84.18L33.91 72.07M15.6 100.34L31.21 84.18" fill="none" stroke="#fff6ee" stroke-opacity="0.7" stroke-width="1.25" stroke-linecap="round"/>
+<g transform="translate(92.25 35.75) rotate(135) scale(0.94)">
+<path d="M-11.5 0C-11.5 -6.35 -6.35 -11.5 0 -11.5C18 -13.7 32 -26.5 48 -26.5C66 -26.5 76 -20.7 88 -19.5C90.4 -19.5 92 -16.35 92 -12.7L80 -12.5C70 -12.5 62 -14.5 48 -14.5C36 -14.5 28 -1.4 20 -0.35L19 0L-11.5 0Z" fill="url(#bu)"/>
+<path d="M-11.5 0C-11.5 6.35 -6.35 11.5 0 11.5C18 13.7 32 26.5 48 26.5C66 26.5 76 20.7 88 19.5C90.4 19.5 92 16.35 92 12.7L80 12.5C70 12.5 62 14.5 48 14.5C36 14.5 28 1.4 20 0.35L19 0L-11.5 0Z" fill="url(#bl)"/>
+</g>
+</g>
 </svg>

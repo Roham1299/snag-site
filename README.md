@@ -12,6 +12,9 @@ twice the size in dark mode with reduced motion (Chrome's `--force-dark-mode`,
 `--force-prefers-reduced-motion` and `--force-device-scale-factor=2`): `app.webp` is
 `/preview.html` at 1280×800, `playlist.webp` the picker cropped from `/preview.html?playlist`.
 
+`public/img/icon.svg` is Snag's `packaging/icons/snag-small.svg`, the cut for small sizes, and
+`icon.png` its `snag-maskable.svg` at 256px: copy them again when they change.
+
 `public/app/` is the web app, built from Snag's repository (`task site:app` there): signed in to a
 Snag Cloud account, it sends links to the computers on it, through `cloud.snagdl.com`. Rebuild it
 there after changing it; don't edit it here.
