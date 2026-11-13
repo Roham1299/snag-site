@@ -6,7 +6,7 @@
     <title>Snag: a fast download manager that lives in your browser</title>
     <meta
       name="description"
-      content="Snag adds a Download button to videos, downloads whole playlists and seasons, and takes over big downloads from your browser. Free to use, for Windows, macOS and Linux."
+      content="Snag adds a Download button to videos, downloads whole playlists and seasons, takes over big downloads from your browser, and tidies the files you already have. Free to use, for Windows, macOS and Linux."
     />
     <meta name="theme-color" content="#121418" />
     <meta property="og:title" content="Snag" />
@@ -23,6 +23,7 @@
       <a class="brand" href="/"><img src="/img/icon.svg" alt="" width="28" height="28" />Snag</a>
       <nav>
         <a href="#features">Features</a>
+        <a href="#tools">Tools</a>
         <a href="#download">Download</a>
       </nav>
     </header>
@@ -53,8 +54,9 @@
         <article>
           <h2>A button on every video</h2>
           <p>
-            Every quality from 4K down, audio only, subtitles, and clips cut to the exact frame.
-            Works on about 1,800 video sites and on any page that plays a video file or stream.
+            Every quality from 4K down, audio only, subtitles in your language, lyrics for songs,
+            and clips cut to the exact frame. Works on about 1,800 video sites and on any page that
+            plays a video file or stream.
           </p>
         </article>
         <article>
@@ -113,12 +115,75 @@
         />
       </section>
 
+      <section id="tools" class="tools">
+        <h2>Tools for the files you already have</h2>
+        <p class="lead">
+          Point Snag at a folder and it says what could be better, from videos without subtitles to
+          copies you don't need. Every tool is free, runs on your computer, and changes nothing
+          until you press its button.
+        </p>
+        <img
+          class="shot"
+          src="/img/tools.webp"
+          width="1280"
+          height="800"
+          loading="lazy"
+          alt="Snag's Tools: what it found in a Downloads folder, such as a video that stops early, videos without English subtitles, a copy, songs without lyrics or tags, each with the button of the tool that fixes it"
+        />
+        <div class="features">
+          <article>
+            <h3>Subtitles &amp; lyrics</h3>
+            <p>
+              Subtitles from OpenSubtitles, with your own free key, or from the site the episodes
+              came from. Lyrics from LRCLIB, timed line by line.
+            </p>
+          </article>
+          <article>
+            <h3>Tags &amp; covers</h3>
+            <p>
+              Titles, artists, albums and 1200-pixel covers from Deezer and Apple Music, episode
+              titles from TVmaze. Pick another match, or search, when it isn't sure.
+            </p>
+          </article>
+          <article>
+            <h3>Rename</h3>
+            <p>
+              Names a folder's episodes, songs or videos one way, with episode titles from TVmaze.
+              Subtitle files follow, and the last rename can be undone.
+            </p>
+          </article>
+          <article>
+            <h3>Convert &amp; shrink</h3>
+            <p>
+              Makes videos play anywhere, fit under a size for chat apps, or take about half the
+              space, with the encoders your computer has. Or keeps just the sound.
+            </p>
+          </article>
+          <article>
+            <h3>Find duplicates</h3>
+            <p>
+              Finds a song or video kept more than once, by its sound, name or bytes. It keeps the
+              original and moves the extras to the Recycle Bin or Trash.
+            </p>
+          </article>
+          <article>
+            <h3>Check files</h3>
+            <p>
+              Finds files that won't open, stop early, or came out smaller than they downloaded, and
+              gets Snag's own downloads again.
+            </p>
+          </article>
+        </div>
+      </section>
+
       <section class="private">
         <h2>Private by design</h2>
         <p>
           Snag runs entirely on your computer, and the extension talks only to the Snag app on the
           same machine. Every hour the app reads a small signed file from this website to learn of
-          new releases. It sends nothing about you or your downloads.
+          new releases. To find lyrics, tags, covers or subtitles, it asks LRCLIB, Deezer, Apple
+          Music, TVmaze or OpenSubtitles about that song or show. It sends nothing else about you or
+          your downloads.
         </p>
       </section>
 

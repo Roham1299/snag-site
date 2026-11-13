@@ -10,7 +10,8 @@ The download buttons find their files in Snag's updates bucket, `updates.snagdl.
 Screenshots come from the app's preview mode (`npm run dev` in Snag's `frontend/`), taken at
 twice the size in dark mode with reduced motion (Chrome's `--force-dark-mode`,
 `--force-prefers-reduced-motion` and `--force-device-scale-factor=2`): `app.webp` is
-`/preview.html` at 1280×800, `playlist.webp` the picker cropped from `/preview.html?playlist`.
+`/preview.html` at 1280×800, `tools.webp` `/preview.html?tools` at 1280×800, and `playlist.webp`
+the picker cropped from `/preview.html?playlist`.
 
 `public/img/icon.svg` is Snag's `packaging/icons/snag.svg`, `icon-32.png` (the favicon) its
 `snag-32.png`, and `icon.png` its `snag-maskable.svg` at 256px: copy them again when they change.
